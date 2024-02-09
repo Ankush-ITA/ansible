@@ -6,7 +6,7 @@
    tasks:
      name: Loop over all the softwares
      debug:
-       msg:  This is software {{ item }}
+       msg:  "This is software {{ item }}"
      loop:
        - wget
        - apache
