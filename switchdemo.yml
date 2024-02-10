@@ -2,6 +2,7 @@
 - name: Switches demo play
   hosts: all
   gather_facts: no
+  become: root
 
   tasks:
     - name: Create a user
