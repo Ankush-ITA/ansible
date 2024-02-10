@@ -1,0 +1,13 @@
+---
+- name: Variable Example
+  hosts: all
+
+  vars:
+   name1 : httpdport
+   port_number : 80
+
+  tasks:
+
+   - name: Show Variable
+     debug:
+       msg: "{{ name1 }}"
