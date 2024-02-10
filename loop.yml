@@ -1,14 +1,15 @@
 ---
- - name: loops demo play
-   hosts: all
-   gather_facts: no
-   vars:
-     fruits:
-       - apple
-       - orange
-       - mango
-   tasks:
+- name: loops demo play
+  hosts: all
+  gather_facts: no
+  vars:
+    fruits:
+      - apple
+      - orange
+      - mango
+  tasks:
     - name: Loop over all the softwares
-     debug:
-       msg: " This is fruit {{ item }} "
-     loop: "{{ fruits }}"
+      debug:
+        msg: " This is fruit {{ item }} "
+      loop: "{{ fruits }}"
+
