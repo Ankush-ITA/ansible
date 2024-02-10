@@ -1,5 +1,4 @@
-----
-
+---
 - name: Switches demo play
   hosts: all
   gather_facts: no
@@ -9,3 +8,4 @@
       user:
         name: Alex
         state: present
+
