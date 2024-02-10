@@ -2,7 +2,7 @@
 - name: Switches demo play
   hosts: all
   gather_facts: no
-  become: true
+  
 
   tasks:
     - name: Create a user
@@ -10,3 +10,13 @@
         name: Alex
         state: present
 
+      become: true
+    - name: Task 2
+      debug:
+        msg: "This is task 2"
+
+    - name: Task 3
+      debug:
+        msg: This is task 3"
+  
+         
