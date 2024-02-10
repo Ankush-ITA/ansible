@@ -1,16 +1,11 @@
----
 - name: Making use of register
   hosts: all
-
   tasks:
-   - name: Creating new user
-     become: yes
-
-     user:
-      name: Alex2
-      state: Present
-
-     register: Creating_user
-
-     debug:
-      msg: "{{Creating_user}}"
+    - name: Creating new user
+      become: yes
+      user:
+        name: Alex2
+        state: present
+      register: Creating_user
+    - debug:
+        msg: "{{ Creating_user }}"
