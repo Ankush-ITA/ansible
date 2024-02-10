@@ -13,5 +13,5 @@
         msg: " This is fruit {{ item }} at index {{ index }} "
       loop: "{{ fruits }}"
       loop_control:
-         index_var: index
+        index_var : index
 
