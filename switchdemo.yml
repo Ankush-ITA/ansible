@@ -1,0 +1,11 @@
+----
+
+- name: Switches demo play
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Create a user
+      user:
+        name: Alex
+        state: present
