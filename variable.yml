@@ -10,4 +10,4 @@
 
    - name: Show Variable
      debug:
-       msg: "{{ name1 }}"
+       msg: "{{ name1 }}  {{ port_number }}"
