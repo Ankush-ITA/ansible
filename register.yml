@@ -11,3 +11,6 @@
       state: Present
 
      register: Creating_user
+
+     debug:
+      msg: "{{Creating_user}}"
