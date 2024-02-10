@@ -1,13 +1,12 @@
----
 - name: Sending Email
   hosts: 10.127.136.140
-
   tasks:
-   - name: Sending Email
-     mail:
-       host: smtp.gmail.com
-       username: erdigitalmarketer96@gmail.com
-       passowrd: hvby oflp uboo nhso
-       from: erdigitalmarketer96@gmail.com
-       to: ankushkumar5951@gmail.com
-       secure: starttls
+    - name: Sending Email
+      mail:
+        host: smtp.gmail.com
+        username: erdigitalmarketer96@gmail.com
+        password: hvby oflp uboo nhso  # You should replace this with the actual password or use Ansible vault for security.
+        from: erdigitalmarketer96@gmail.com
+        to: ankushkumar5951@gmail.com
+        secure: yes  # This should be configured according to your SMTP server's settings.
+
