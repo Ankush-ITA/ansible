@@ -11,7 +11,7 @@
         host: smtp.gmail.com
         port: 587  # Typically 25 for non-SSL, 465 for SSL/TLS
         username: erdigitalmarketer96@gmail.com
-        password: hvby oflp uboo nhso
+        password: hvby oflp uboo nh
         to: ankushkumar5951@gmail.com
         subject: "Test Email from Ansible"
         body: "This is a test email sent using Ansible."
