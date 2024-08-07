@@ -21,6 +21,6 @@
         msg: '{{needs-restarting}}'
 
     - name: Reboot machine if needs needs-restarting
-      Reboot:
+      reboot:
         reboot_timeout: 600
       when: needs-restarting =="1"
