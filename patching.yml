@@ -1,6 +1,7 @@
 ---
 - name: We are going to do Patching
   hosts: '{{ hostname | default("localhost")}}'
+  become: yes
   tasks:
     - name: Update Packages
       yum:
