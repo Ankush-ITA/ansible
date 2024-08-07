@@ -16,6 +16,7 @@
 
     - name: See if the server needs rebooting
       shell: "needs-restarting -r > /dev/null; echo $?"
+      register: needs-restarting
 
     - name: debug
       debug:
