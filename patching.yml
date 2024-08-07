@@ -1,0 +1,26 @@
+---
+- name: We are going to do Patching
+  hosts: '{{ hostname | default("localhost")}}'
+  tasks:
+    - name: Update Packages
+      yum:
+        name: "*"
+        state: latest
+
+
+    - name: Install yum-utils
+      yum:
+        name: "yum-utils"
+        state: installed
+
+    - name: See if the server needs rebooting
+      shell: "needs-restarting -r > /dev/null; echo $?"
+
+    - name: debug
+      debug:
+        msg: '{{needs-restarting}}'
+
+    - name: Reboot machine if needs needs-restarting
+      Reboot:
+        reboot_timeout: 600
+      when: needs-restarting =="1"
